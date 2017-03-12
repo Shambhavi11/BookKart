@@ -1,0 +1,11 @@
+SELECT * FROM book_db_store.book;
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('Alice\'s Adventures in Wonderland','Lewis Carroll',210,'Paperback',5,'Classic',4);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('Malgudi Days','R.K.Narayan',150,'Paperback',5,'Fiction',4);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('Pride and Prejudice','Jane Austen',200,'Paperback',4,'Classic',4);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('The Alchemist','Paulo Coelho',125,'Paperback',10,'Fiction',5);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('The Da Vinci Code','Dan Brown',410,'Paperback',10,'Mystery',5);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('The Kite Runner','Khaled Hosseini',250,'Paperback',6,'Drama',3);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('The Return of Sherlock Holmes','Arthur Conan Doyle',250,'Paperback',9,'Fiction',4);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('The Stars Shine Down','Sidney Sheldon',200,'Paperback',5,'Thriller',4);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('The Woman in Black','Susan Hill',100,'Paperback',3,'Horror',3);
+INSERT INTO `books` (`Bname`,`Aname`,`Price`,`Frmt`,`Copies`,`Category`,`Rating`) VALUES ('To Kill A Mocking Bird','Harper Lee',95,'Paperback',20,'Fiction',4);
