@@ -3,18 +3,15 @@
 <?php
 
 $database="book_db_store";
-
 $password="429230b4";
-
 $username="be22a528375bbb";
-
-$host="in-cdbr-azure-south-c.cloudapp.net"
+$host="in-cdbr-azure-south-c.cloudapp.net3306";
 $con = mysql_connect($host,$username,$password) or die("Unable to log into database");
 @mysql_select_db($database,$con) or die("Unable to connect");
 
 if(!empty($_POST['cat'])){
 	$inputcat = $_POST['cat'];
-	$query = "SELECT * FROM details WHERE Category="$inputcat"";
+	$query = "SELECT * FROM details WHERE Category="'$inputcat'";
 	echo mysql_error();
 
 	$result = mysql_query($query) or die(mysql_error());

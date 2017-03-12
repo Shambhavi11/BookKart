@@ -3,14 +3,13 @@
 
 $inputbook = $_POST['Bname'];
 
-$database="book_store";
-$password="1fed871b";
-$username="bfda3007c831fe";
-$host="in-cdbr-azure-south-c.cloudapp.net";
-
+$database="book_db_store";
+$password="429230b4";
+$username="be22a528375bbb";
+$host="in-cdbr-azure-south-c.cloudapp.net3306";
 //echo "$inputbook";
 
-$con = mysql_connect('localhost',$username,$password) or die("Unable to log into database");
+$con = mysql_connect($host,$username,$password) or die("Unable to log into database");
 @mysql_select_db($database,$con) or die("Unable to connect");
 
 $query = "UPDATE details SET Copies=Copies-1 WHERE bname='$inputbook' AND Copies>0";

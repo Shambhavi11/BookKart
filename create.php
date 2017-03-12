@@ -4,15 +4,14 @@ $userreg=$_POST['user'];
 $passreg=$_POST['pass'];
 
 //Create few varaibles
-$taken="false";
-$database="tutorial";
-$password="root";
-$username="root";
-
+$database="book_db_store";
+$password="429230b4";
+$username="be22a528375bbb";
+$host="in-cdbr-azure-south-c.cloudapp.net3306";
 //main if statement
 if($userreg&&$passreg){
 	//Connect to database
-	$con = myseql_connect('localhost',$username,$password) or die("Unable to log into database");
+	$con = myseql_connect($host,$username,$password) or die("Unable to log into database");
 	@mysql_select_db($database,$con) or die("Unable to connect");
 mysql_query("INSERT INTO 'users' VALUES('','$userreg','$passreg')") or die("Strange error");
 echo "Account Created";
