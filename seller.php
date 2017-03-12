@@ -1,8 +1,8 @@
 <?php
 
-$database="book_store";
-$password="1fed871b";
-$username="bfda3007c831fe";
+$database="book_db_store";
+$password="429230b4";
+$username="be22a528375bbb";
 $host="in-cdbr-azure-south-c.cloudapp.net"
 
 $con = mysql_connect($host,$username,$password) or die("Unable to log into database");
